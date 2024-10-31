@@ -1,0 +1,81 @@
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccngGUoj.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"hello.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.rodata.hello.str1.4,"aMS",%progbits,1
+  20              		.align	2
+  21              	.LC0:
+  22 0000 68656C6C 		.ascii	"hello world\000"
+  22      6F20776F 
+  22      726C6400 
+  23              		.section	.text.hello,"ax",%progbits
+  24              		.align	1
+  25              		.global	hello
+  26              		.syntax unified
+  27              		.thumb
+  28              		.thumb_func
+  30              	hello:
+  31              	.LFB3:
+  32              		.file 1 "eapp/hello.c"
+   1:eapp/hello.c  **** #include "hello.h"
+   2:eapp/hello.c  **** #include <stdio.h>
+   3:eapp/hello.c  **** void hello(void)
+   4:eapp/hello.c  **** {
+  33              		.loc 1 4 1 view -0
+  34              		.cfi_startproc
+  35              		@ args = 0, pretend = 0, frame = 0
+  36              		@ frame_needed = 0, uses_anonymous_args = 0
+  37 0000 08B5     		push	{r3, lr}
+  38              	.LCFI0:
+  39              		.cfi_def_cfa_offset 8
+  40              		.cfi_offset 3, -8
+  41              		.cfi_offset 14, -4
+   5:eapp/hello.c  ****     printf("hello world\n");
+  42              		.loc 1 5 5 view .LVU1
+  43 0002 0248     		ldr	r0, .L3
+  44 0004 FFF7FEFF 		bl	puts
+  45              	.LVL0:
+   6:eapp/hello.c  **** }
+  46              		.loc 1 6 1 is_stmt 0 view .LVU2
+  47 0008 08BD     		pop	{r3, pc}
+  48              	.L4:
+  49 000a 00BF     		.align	2
+  50              	.L3:
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccngGUoj.s 			page 2
+
+
+  51 000c 00000000 		.word	.LC0
+  52              		.cfi_endproc
+  53              	.LFE3:
+  55              		.text
+  56              	.Letext0:
+  57              		.file 2 "<built-in>"
+ARM GAS  C:\Users\ADMINI~1\AppData\Local\Temp\ccngGUoj.s 			page 3
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 hello.c
+C:\Users\ADMINI~1\AppData\Local\Temp\ccngGUoj.s:20     .rodata.hello.str1.4:00000000 $d
+C:\Users\ADMINI~1\AppData\Local\Temp\ccngGUoj.s:24     .text.hello:00000000 $t
+C:\Users\ADMINI~1\AppData\Local\Temp\ccngGUoj.s:30     .text.hello:00000000 hello
+C:\Users\ADMINI~1\AppData\Local\Temp\ccngGUoj.s:51     .text.hello:0000000c $d
+
+UNDEFINED SYMBOLS
+puts

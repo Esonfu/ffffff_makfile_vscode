@@ -1,0 +1,6 @@
+{
+    "label": "Clean",
+    "type": "shell",
+    "command": "make clean",
+    "group": "build"
+}
